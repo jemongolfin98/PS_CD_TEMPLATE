@@ -14,108 +14,136 @@ public class GameControllerScript : MonoBehaviour
     private int careerOption05;
 
     // Options
-    // Options - Question 01
+    // Options - Questions
+    // Options - Questions - Main Questions
+    // Options - Questions - Main Questions - Question 01
     private GameObject q01Option01;
     private GameObject q01Option02;
     private GameObject q01Option03;
     private GameObject q01Option04;
     private GameObject q01Option05;
-    // Options - Question 02
+    // Options - Questions - Main Questions - Question 02
     private GameObject q02Option01;
     private GameObject q02Option02;
     private GameObject q02Option03;
     private GameObject q02Option04;
     private GameObject q02Option05;
-    // Options - Question 03
+    // Options - Questions - Main questions - Question 03
     private GameObject q03Option01;
     private GameObject q03Option02;
     private GameObject q03Option03;
     private GameObject q03Option04;
     private GameObject q03Option05;
-    // Options - Question 04
+    // Options - Questions - Main Questions - Question 04
     private GameObject q04Option01;
     private GameObject q04Option02;
     private GameObject q04Option03;
     private GameObject q04Option04;
     private GameObject q04Option05;
-    // Options - Question 05
+    // Options - Questions - Main Questions - Question 05
     private GameObject q05Option01;
     private GameObject q05Option02;
     private GameObject q05Option03;
     private GameObject q05Option04;
     private GameObject q05Option05;
-    // Options - Question 06
+    // Options - Questions - Main Questions - Question 06
     private GameObject q06Option01;
     private GameObject q06Option02;
     private GameObject q06Option03;
     private GameObject q06Option04;
     private GameObject q06Option05;
-    // Options - Question 07
+    // Options - Questions - Main Questions - Question 07
     private GameObject q07Option01;
     private GameObject q07Option02;
     private GameObject q07Option03;
     private GameObject q07Option04;
     private GameObject q07Option05;
-    // Options - Question 08
+    // Options - Questions - Main Questions - Question 08
     private GameObject q08Option01;
     private GameObject q08Option02;
     private GameObject q08Option03;
     private GameObject q08Option04;
     private GameObject q08Option05;
-    // Options - Question 09
+    // Options - Questions - Main Questions - Question 09
     private GameObject q09Option01;
     private GameObject q09Option02;
     private GameObject q09Option03;
     private GameObject q09Option04;
     private GameObject q09Option05;
-    // Options - Question 10
+    // Options - Questions - Main Questions - Question 10
     private GameObject q10Option01;
     private GameObject q10Option02;
     private GameObject q10Option03;
     private GameObject q10Option04;
     private GameObject q10Option05;
-    // Options - Question 11
+    // Options - Questions - Main Questions - Question 11
     private GameObject q11Option01;
     private GameObject q11Option02;
     private GameObject q11Option03;
     private GameObject q11Option04;
     private GameObject q11Option05;
-    // Options - Question 12
+    // Options - Questions - Main Questions - Question 12
     private GameObject q12Option01;
     private GameObject q12Option02;
     private GameObject q12Option03;
     private GameObject q12Option04;
     private GameObject q12Option05;
-    // Options - Question 13
+    // Options - Questions - Main Questions - Question 13
     private GameObject q13Option01;
     private GameObject q13Option02;
     private GameObject q13Option03;
     private GameObject q13Option04;
     private GameObject q13Option05;
-    // Options - Question 14
+    // Options - Questions - Main Questions - Question 14
     private GameObject q14Option01;
     private GameObject q14Option02;
     private GameObject q14Option03;
     private GameObject q14Option04;
     private GameObject q14Option05;
-    // Options - Question 15
+    // Options - Questions - Main Questions - Question 15
     private GameObject q15Option01;
     private GameObject q15Option02;
     private GameObject q15Option03;
     private GameObject q15Option04;
     private GameObject q15Option05;
-    // Options - Bonus Question
-    private GameObject qBOption01;
-    private GameObject qBOption02;
-    private GameObject qBOption03;
-    private GameObject qBOption04;
-    private GameObject qBOption05;
+    // Options - Questions - Bonus Questions
+    // Options - Questions - Bonus Questions - Question 01
+    private GameObject qB01Option01;
+    private GameObject qB01Option02;
+    private GameObject qB01Option03;
+    private GameObject qB01Option04;
+    private GameObject qB01Option05;
+    // Options - Questions - Bonus Questions - Question 02
+    private GameObject qB02Option01;
+    private GameObject qB02Option02;
+    private GameObject qB02Option03;
+    private GameObject qB02Option04;
+    private GameObject qB02Option05;
+    // Options - Questions - Bonus Questions - Question 03
+    private GameObject qB03Option01;
+    private GameObject qB03Option02;
+    private GameObject qB03Option03;
+    private GameObject qB03Option04;
+    private GameObject qB03Option05;
+    // Options - Questions - Bonus Questions - Question 04
+    private GameObject qB04Option01;
+    private GameObject qB04Option02;
+    private GameObject qB04Option03;
+    private GameObject qB04Option04;
+    private GameObject qB04Option05;
+    // Options - Questions - Bonus Questions - Question 05
+    private GameObject qB05Option01;
+    private GameObject qB05Option02;
+    private GameObject qB05Option03;
+    private GameObject qB05Option04;
+    private GameObject qB05Option05;
 
 
     // Screens
     // Screens - Start Game
     private GameObject startGameScreen;
     // Screens - Questions
+    // Screens - Questions - Main Questions
     private GameObject question01Screen;
     private GameObject question02Screen;
     private GameObject question03Screen;
@@ -131,7 +159,12 @@ public class GameControllerScript : MonoBehaviour
     private GameObject question13Screen;
     private GameObject question14Screen;
     private GameObject question15Screen;
-    private GameObject questionBScreen;
+    // Screens - Questions - Bonus Questions
+    private GameObject questionB01Screen;
+    private GameObject questionB02Screen;
+    private GameObject questionB03Screen;
+    private GameObject questionB04Screen;
+    private GameObject questionB05Screen;
     // Screens - Job Options
     private GameObject careerOption01Screen;
     private GameObject careerOption02Screen;
@@ -141,6 +174,7 @@ public class GameControllerScript : MonoBehaviour
 
     // Buttons
     // Buttons - Questions
+    // Buttons - Questions - Main Questions
     private GameObject q01NextButton;
     private GameObject q02NextButton;
     private GameObject q03NextButton;
@@ -156,13 +190,22 @@ public class GameControllerScript : MonoBehaviour
     private GameObject q13NextButton;
     private GameObject q14NextButton;
     private GameObject q15NextButton;
-    private GameObject qBNextButton;
+    // Buttons - Questions - Bonus Questions
+    private GameObject qB01NextButton;
+    private GameObject qB02NextButton;
+    private GameObject qB03NextButton;
+    private GameObject qB04NextButton;
+    private GameObject qB05NextButton;
 
     // Data
     // Data - Variables
+    // Data - Variables - 
+    // Data - Variables - Random
     private int questionNumber;
     private int questionsAnswered;
+    private int bonusQuestionNumber;
     // Data - Bools
+    // Data - Bools - Main Questions
     private bool question01Answered = false;
     private bool question02Answered = false;
     private bool question03Answered = false;
@@ -178,6 +221,12 @@ public class GameControllerScript : MonoBehaviour
     private bool question13Answered = false;
     private bool question14Answered = false;
     private bool question15Answered = false;
+    // Data - Bools - Bonus Questions
+    private bool questionB01Answered = false;
+    private bool questionB02Answered = false;
+    private bool questionB03Answered = false;
+    private bool questionB04Answered = false;
+    private bool questionB05Answered = false;
 
 
     // Start is called before the first frame update
@@ -274,19 +323,44 @@ public class GameControllerScript : MonoBehaviour
         q15Option03 = GameObject.Find("Q15Option03");
         q15Option04 = GameObject.Find("Q15Option04");
         q15Option05 = GameObject.Find("Q15Option05");
-
-        // Options - Question Bonus
-        qBOption01 = GameObject.Find("QBOption01");
-        qBOption02 = GameObject.Find("QBOption02");
-        qBOption03 = GameObject.Find("QBOption03");
-        qBOption04 = GameObject.Find("QBOption04");
-        qBOption05 = GameObject.Find("QBOption05");
+        // Options - Bonus Questions
+        // Options - Bonus Questions - Question 01
+        qB01Option01 = GameObject.Find("QB01Option01");
+        qB01Option02 = GameObject.Find("QB01Option02");
+        qB01Option03 = GameObject.Find("QB01Option03");
+        qB01Option04 = GameObject.Find("QB01Option04");
+        qB01Option05 = GameObject.Find("QB01Option05");
+        // Options - Bonus Questions - Question 02
+        qB02Option01 = GameObject.Find("QB02Option01");
+        qB02Option02 = GameObject.Find("QB02Option02");
+        qB02Option03 = GameObject.Find("QB02Option03");
+        qB02Option04 = GameObject.Find("QB02Option04");
+        qB02Option05 = GameObject.Find("QB02Option05");
+        // Options - Bonus Questions - Question 03
+        qB03Option01 = GameObject.Find("QB03Option01");
+        qB03Option02 = GameObject.Find("QB03Option02");
+        qB03Option03 = GameObject.Find("QB03Option03");
+        qB03Option04 = GameObject.Find("QB03Option04");
+        qB03Option05 = GameObject.Find("QB03Option05");
+        // Options - Bonus Questions - Question 04
+        qB04Option01 = GameObject.Find("QB04Option01");
+        qB04Option02 = GameObject.Find("QB04Option02");
+        qB04Option03 = GameObject.Find("QB04Option03");
+        qB04Option04 = GameObject.Find("QB04Option04");
+        qB04Option05 = GameObject.Find("QB04Option05");
+        // Options - Bonus Questions - Question 05
+        qB05Option01 = GameObject.Find("QB05Option01");
+        qB05Option02 = GameObject.Find("QB05Option02");
+        qB05Option03 = GameObject.Find("QB05Option03");
+        qB05Option04 = GameObject.Find("QB05Option04");
+        qB05Option05 = GameObject.Find("QB05Option05");
 
 
         // Screens
         // Screens - Start Game Screen
         startGameScreen = GameObject.Find("StartGameScreen");
         // Screens - Questions
+        // Screens - Questions - Main Questions
         question01Screen = GameObject.Find("Question01Screen");
         question02Screen = GameObject.Find("Question02Screen");
         question03Screen = GameObject.Find("Question03Screen");
@@ -302,7 +376,12 @@ public class GameControllerScript : MonoBehaviour
         question13Screen = GameObject.Find("Question13Screen");
         question14Screen = GameObject.Find("Question14Screen");
         question15Screen = GameObject.Find("Question15Screen");
-        questionBScreen = GameObject.Find("QuestionBScreen");
+        // Screens - Questions - Bonus Questions
+        questionB01Screen = GameObject.Find("QuestionB01Screen");
+        questionB02Screen = GameObject.Find("QuestionB02Screen");
+        questionB03Screen = GameObject.Find("QuestionB03Screen");
+        questionB04Screen = GameObject.Find("QuestionB04Screen");
+        questionB05Screen = GameObject.Find("QuestionB05Screen");
         // Screens - Job Options
         careerOption01Screen = GameObject.Find("CareerOption01Screen");
         careerOption02Screen = GameObject.Find("CareerOption02Screen");
@@ -311,6 +390,7 @@ public class GameControllerScript : MonoBehaviour
         careerOption05Screen = GameObject.Find("CareerOption05Screen");
 
         // Buttons
+        // Buttons - Main Questions
         q01NextButton = GameObject.Find("q01NextButton");
         q02NextButton = GameObject.Find("q02NextButton");
         q03NextButton = GameObject.Find("q03NextButton");
@@ -326,13 +406,19 @@ public class GameControllerScript : MonoBehaviour
         q13NextButton = GameObject.Find("q13NextButton");
         q14NextButton = GameObject.Find("q14NextButton");
         q15NextButton = GameObject.Find("q15NextButton");
-        qBNextButton = GameObject.Find("qBNextButton");
+        // Buttons - Bonus Questions
+        qB01NextButton = GameObject.Find("qB01NextButton");
+        qB02NextButton = GameObject.Find("qB02NextButton");
+        qB03NextButton = GameObject.Find("qB03NextButton");
+        qB04NextButton = GameObject.Find("qB04NextButton");
+        qB05NextButton = GameObject.Find("qB05NextButton");
     }
 
     void Start()
     {
         // Screens
         // Screens - Questions
+        // Screens - Questions - Main Questions
         question01Screen.SetActive(false);
         question02Screen.SetActive(false);
         question03Screen.SetActive(false);
@@ -348,7 +434,12 @@ public class GameControllerScript : MonoBehaviour
         question13Screen.SetActive(false);
         question14Screen.SetActive(false);
         question15Screen.SetActive(false);
-        questionBScreen.SetActive(false);
+        // Screens - Questions - Bonus Questions
+        questionB01Screen.SetActive(false);
+        questionB02Screen.SetActive(false);
+        questionB03Screen.SetActive(false);
+        questionB04Screen.SetActive(false);
+        questionB05Screen.SetActive(false);
         // Screens - Job Options
         careerOption01Screen.SetActive(false);
         careerOption02Screen.SetActive(false);
@@ -357,6 +448,7 @@ public class GameControllerScript : MonoBehaviour
         careerOption05Screen.SetActive(false);
 
         // Buttons
+        // Buttons - Main Questions
         q01NextButton.SetActive(false);
         q02NextButton.SetActive(false);
         q03NextButton.SetActive(false);
@@ -372,7 +464,12 @@ public class GameControllerScript : MonoBehaviour
         q13NextButton.SetActive(false);
         q14NextButton.SetActive(false);
         q15NextButton.SetActive(false);
-        qBNextButton.SetActive(false);
+        // Buttons - Bonus Questions
+        qB01NextButton.SetActive(false);
+        qB02NextButton.SetActive(false);
+        qB03NextButton.SetActive(false);
+        qB04NextButton.SetActive(false);
+        qB05NextButton.SetActive(false);
     }
 
 
@@ -1391,70 +1488,325 @@ public class GameControllerScript : MonoBehaviour
         }
         else
         {
-            questionBScreen.SetActive(true);
+            RandomBonusQuestion01();
         }
     }
 
-    // Bonus Question
-    public void QBOption01()
-    {
-        qBOption01.SetActive(true);
-        qBOption02.SetActive(false);
-        qBOption03.SetActive(false);
-        qBOption04.SetActive(false);
-        qBOption05.SetActive(false);
 
-        careerOption01 += 1;
-        qBNextButton.SetActive(true);
-    }
-    public void QBOption02()
+    // Bonus Question 01
+    public void QB01Option01()
     {
-        qBOption01.SetActive(false);
-        qBOption02.SetActive(true);
-        qBOption03.SetActive(false);
-        qBOption04.SetActive(false);
-        qBOption05.SetActive(false);
+        qB01Option01.SetActive(true);
+        qB01Option02.SetActive(false);
+        qB01Option03.SetActive(false);
+        qB01Option04.SetActive(false);
+        qB01Option05.SetActive(false);
 
-        careerOption02 += 1;
-        qBNextButton.SetActive(true);
+        careerOption01 += 2;
+        qB01NextButton.SetActive(true);
     }
-    public void QBOption03()
+    public void QB01Option02()
     {
-        qBOption01.SetActive(false);
-        qBOption02.SetActive(false);
-        qBOption03.SetActive(true);
-        qBOption04.SetActive(false);
-        qBOption05.SetActive(false);
+        qB01Option01.SetActive(false);
+        qB01Option02.SetActive(true);
+        qB01Option03.SetActive(false);
+        qB01Option04.SetActive(false);
+        qB01Option05.SetActive(false);
 
-        careerOption03 += 1;
-        qBNextButton.SetActive(true);
+        careerOption02 += 2;
+        qB01NextButton.SetActive(true);
     }
-    public void QBOption04()
+    public void QB01Option03()
     {
-        qBOption01.SetActive(false);
-        qBOption02.SetActive(false);
-        qBOption03.SetActive(false);
-        qBOption04.SetActive(true);
-        qBOption05.SetActive(false);
+        qB01Option01.SetActive(false);
+        qB01Option02.SetActive(false);
+        qB01Option03.SetActive(true);
+        qB01Option04.SetActive(false);
+        qB01Option05.SetActive(false);
 
-        careerOption04 += 1;
-        qBNextButton.SetActive(true);
+        careerOption03 += 2;
+        qB01NextButton.SetActive(true);
     }
-    public void QBOption05()
+    public void QB01Option04()
     {
-        qBOption01.SetActive(false);
-        qBOption02.SetActive(false);
-        qBOption03.SetActive(false);
-        qBOption04.SetActive(false);
-        qBOption05.SetActive(true);
+        qB01Option01.SetActive(false);
+        qB01Option02.SetActive(false);
+        qB01Option03.SetActive(false);
+        qB01Option04.SetActive(true);
+        qB01Option05.SetActive(false);
 
-        careerOption05 += 1;
-        qBNextButton.SetActive(true);
+        careerOption04 += 2;
+        qB01NextButton.SetActive(true);
     }
+    public void QB01Option05()
+    {
+        qB01Option01.SetActive(false);
+        qB01Option02.SetActive(false);
+        qB01Option03.SetActive(false);
+        qB01Option04.SetActive(false);
+        qB01Option05.SetActive(true);
+
+        careerOption05 += 2;
+        qB01NextButton.SetActive(true);
+    }
+    public void QB01Completed()
+    {
+        questionB01Answered = true;
+        questionB01Screen.SetActive(false);
+        QBCompleted();
+    }
+    // Bonus Question 02
+    public void QB02Option01()
+    {
+        qB02Option01.SetActive(true);
+        qB02Option02.SetActive(false);
+        qB02Option03.SetActive(false);
+        qB02Option04.SetActive(false);
+        qB02Option05.SetActive(false);
+
+        careerOption01 += 2;
+        qB02NextButton.SetActive(true);
+    }
+    public void QB02Option02()
+    {
+        qB02Option01.SetActive(false);
+        qB02Option02.SetActive(true);
+        qB02Option03.SetActive(false);
+        qB02Option04.SetActive(false);
+        qB02Option05.SetActive(false);
+
+        careerOption02 += 2;
+        qB02NextButton.SetActive(true);
+    }
+    public void QB02Option03()
+    {
+        qB02Option01.SetActive(false);
+        qB02Option02.SetActive(false);
+        qB02Option03.SetActive(true);
+        qB02Option04.SetActive(false);
+        qB02Option05.SetActive(false);
+
+        careerOption03 += 2;
+        qB02NextButton.SetActive(true);
+    }
+    public void QB02Option04()
+    {
+        qB02Option01.SetActive(false);
+        qB02Option02.SetActive(false);
+        qB02Option03.SetActive(false);
+        qB02Option04.SetActive(true);
+        qB02Option05.SetActive(false);
+
+        careerOption04 += 2;
+        qB02NextButton.SetActive(true);
+    }
+    public void QB02Option05()
+    {
+        qB02Option01.SetActive(false);
+        qB02Option02.SetActive(false);
+        qB02Option03.SetActive(false);
+        qB02Option04.SetActive(false);
+        qB02Option05.SetActive(true);
+
+        careerOption05 += 2;
+        qB02NextButton.SetActive(true);
+    }
+    public void QB02Completed()
+    {
+        questionB02Answered = true;
+        questionB02Screen.SetActive(false);
+        QBCompleted();
+    }
+    // Bonus Question 03
+    public void QB03Option01()
+    {
+        qB03Option01.SetActive(true);
+        qB03Option02.SetActive(false);
+        qB03Option03.SetActive(false);
+        qB03Option04.SetActive(false);
+        qB03Option05.SetActive(false);
+
+        careerOption01 += 2;
+        qB03NextButton.SetActive(true);
+    }
+    public void QB03Option02()
+    {
+        qB03Option01.SetActive(false);
+        qB03Option02.SetActive(true);
+        qB03Option03.SetActive(false);
+        qB03Option04.SetActive(false);
+        qB03Option05.SetActive(false);
+
+        careerOption02 += 2;
+        qB03NextButton.SetActive(true);
+    }
+    public void QB03Option03()
+    {
+        qB03Option01.SetActive(false);
+        qB03Option02.SetActive(false);
+        qB03Option03.SetActive(true);
+        qB03Option04.SetActive(false);
+        qB03Option05.SetActive(false);
+
+        careerOption03 += 2;
+        qB03NextButton.SetActive(true);
+    }
+    public void QB03Option04()
+    {
+        qB03Option01.SetActive(false);
+        qB03Option02.SetActive(false);
+        qB03Option03.SetActive(false);
+        qB03Option04.SetActive(true);
+        qB03Option05.SetActive(false);
+
+        careerOption04 += 2;
+        qB03NextButton.SetActive(true);
+    }
+    public void QB03Option05()
+    {
+        qB03Option01.SetActive(false);
+        qB03Option02.SetActive(false);
+        qB03Option03.SetActive(false);
+        qB03Option04.SetActive(false);
+        qB03Option05.SetActive(true);
+
+        careerOption05 += 2;
+        qB03NextButton.SetActive(true);
+    }
+    public void QB03Completed()
+    {
+        questionB03Answered = true;
+        questionB03Screen.SetActive(false);
+        QBCompleted();
+    }
+    // Bonus Question 04
+    public void QB04Option01()
+    {
+        qB04Option01.SetActive(true);
+        qB04Option02.SetActive(false);
+        qB04Option03.SetActive(false);
+        qB04Option04.SetActive(false);
+        qB04Option05.SetActive(false);
+
+        careerOption01 += 2;
+        qB04NextButton.SetActive(true);
+    }
+    public void QB04Option02()
+    {
+        qB04Option01.SetActive(false);
+        qB04Option02.SetActive(true);
+        qB04Option03.SetActive(false);
+        qB04Option04.SetActive(false);
+        qB04Option05.SetActive(false);
+
+        careerOption02 += 2;
+        qB04NextButton.SetActive(true);
+    }
+    public void QB04Option03()
+    {
+        qB04Option01.SetActive(false);
+        qB04Option02.SetActive(false);
+        qB04Option03.SetActive(true);
+        qB04Option04.SetActive(false);
+        qB04Option05.SetActive(false);
+
+        careerOption03 += 2;
+        qB04NextButton.SetActive(true);
+    }
+    public void QB04Option04()
+    {
+        qB04Option01.SetActive(false);
+        qB04Option02.SetActive(false);
+        qB04Option03.SetActive(false);
+        qB04Option04.SetActive(true);
+        qB04Option05.SetActive(false);
+
+        careerOption04 += 2;
+        qB04NextButton.SetActive(true);
+    }
+    public void QB04Option05()
+    {
+        qB04Option01.SetActive(false);
+        qB04Option02.SetActive(false);
+        qB04Option03.SetActive(false);
+        qB04Option04.SetActive(false);
+        qB04Option05.SetActive(true);
+
+        careerOption05 += 2;
+        qB04NextButton.SetActive(true);
+    }
+    public void QB04Completed()
+    {
+        questionB04Answered = true;
+        questionB04Screen.SetActive(false);
+        QBCompleted();
+    }
+    // Bonus Question 05
+    public void QB05Option01()
+    {
+        qB05Option01.SetActive(true);
+        qB05Option02.SetActive(false);
+        qB05Option03.SetActive(false);
+        qB05Option04.SetActive(false);
+        qB05Option05.SetActive(false);
+
+        careerOption01 += 2;
+        qB05NextButton.SetActive(true);
+    }
+    public void QB05Option02()
+    {
+        qB05Option01.SetActive(false);
+        qB05Option02.SetActive(true);
+        qB05Option03.SetActive(false);
+        qB05Option04.SetActive(false);
+        qB05Option05.SetActive(false);
+
+        careerOption02 += 2;
+        qB05NextButton.SetActive(true);
+    }
+    public void QB05Option03()
+    {
+        qB05Option01.SetActive(false);
+        qB05Option02.SetActive(false);
+        qB05Option03.SetActive(true);
+        qB05Option04.SetActive(false);
+        qB05Option05.SetActive(false);
+
+        careerOption03 += 2;
+        qB05NextButton.SetActive(true);
+    }
+    public void QB05Option04()
+    {
+        qB05Option01.SetActive(false);
+        qB05Option02.SetActive(false);
+        qB05Option03.SetActive(false);
+        qB05Option04.SetActive(true);
+        qB05Option05.SetActive(false);
+
+        careerOption04 += 2;
+        qB05NextButton.SetActive(true);
+    }
+    public void QB05Option05()
+    {
+        qB05Option01.SetActive(false);
+        qB05Option02.SetActive(false);
+        qB05Option03.SetActive(false);
+        qB05Option04.SetActive(false);
+        qB05Option05.SetActive(true);
+
+        careerOption05 += 2;
+        qB05NextButton.SetActive(true);
+    }
+    public void QB05Completed()
+    {
+        questionB05Answered = true;
+        questionB05Screen.SetActive(false);
+        QBCompleted();
+    }
+
+
     public void QBCompleted()
     {
-        questionBScreen.SetActive(false);
-
         if ((careerOption01 > careerOption02) && (careerOption01 > careerOption03) && (careerOption01 > careerOption04) && (careerOption01 > careerOption05))
         {
             careerOption01Screen.SetActive(true);
@@ -1475,9 +1827,13 @@ public class GameControllerScript : MonoBehaviour
         {
             careerOption05Screen.SetActive(true);
         }
+        else
+        {
+            RandomBonusQuestion01();
+        }
     }
 
-    // Random Question 
+    // Random Question Configuration
     public void RandomQuestion01()
     {
         if (questionsAnswered >= 10)
@@ -1489,9 +1845,7 @@ public class GameControllerScript : MonoBehaviour
             questionNumber = UnityEngine.Random.Range(1, 16);
             RandomQuestionChecker();
         }
-        //questionNumber = UnityEngine.Random.Range(1, 10);
     }
-
     public void RandomQuestionChecker()
     {
         if (questionNumber == 1 && question01Answered == true)
@@ -1559,7 +1913,6 @@ public class GameControllerScript : MonoBehaviour
             RandomQuestion02();
         }
     }
-
     public void RandomQuestion02()
     {
         switch (questionNumber)
@@ -1608,6 +1961,61 @@ public class GameControllerScript : MonoBehaviour
                 break;
             case 15:
                 question15Screen.SetActive(true);
+                break;
+        }
+    }
+
+    // Random Bonus Question Configuration
+    public void RandomBonusQuestion01()
+    {
+        questionNumber = UnityEngine.Random.Range(1, 6);
+        RandomBonusQuestionChecker();
+    }
+    public void RandomBonusQuestionChecker()
+    {
+        if (bonusQuestionNumber == 1 && questionB01Answered == true)
+        {
+            RandomBonusQuestion01();
+        }
+        else if (bonusQuestionNumber == 2 && questionB02Answered == true)
+        {
+            RandomBonusQuestion01();
+        }
+        else if (bonusQuestionNumber == 3 && questionB03Answered == true)
+        {
+            RandomBonusQuestion01();
+        }
+        else if (bonusQuestionNumber == 4 && questionB04Answered == true)
+        {
+            RandomBonusQuestion01();
+        }
+        else if (bonusQuestionNumber == 5 && questionB05Answered == true)
+        {
+            RandomBonusQuestion01();
+        }
+        else
+        {
+            RandomBonusQuestion02();
+        }
+    }
+    public void RandomBonusQuestion02()
+    {
+        switch (bonusQuestionNumber)
+        {
+            case 1:
+                questionB01Screen.SetActive(true);
+                break;
+            case 2:
+                questionB02Screen.SetActive(true);
+                break;
+            case 3:
+                questionB03Screen.SetActive(true);
+                break;
+            case 4:
+                questionB04Screen.SetActive(true);
+                break;
+            case 5:
+                questionB05Screen.SetActive(true);
                 break;
         }
     }
