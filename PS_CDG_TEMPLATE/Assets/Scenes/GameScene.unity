@@ -1223,7 +1223,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption04
+        m_MethodName: QB02Option04
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1663,7 +1663,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption05
+        m_MethodName: QB04Option05
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2104,7 +2104,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption01
+        m_MethodName: QB03Option01
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12018,7 +12018,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption01
+        m_MethodName: QB02Option01
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14615,7 +14615,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption05
+        m_MethodName: QB03Option05
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15952,7 +15952,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption03
+        m_MethodName: QB03Option03
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16085,7 +16085,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption05
+        m_MethodName: QB05Option05
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17773,7 +17773,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption02
+        m_MethodName: QB02Option02
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23000,7 +23000,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption04
+        m_MethodName: QB04Option04
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29985,7 +29985,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption03
+        m_MethodName: QB05Option03
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31185,7 +31185,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption04
+        m_MethodName: QB05Option04
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36890,7 +36890,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption04
+        m_MethodName: QB03Option04
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37372,7 +37372,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption03
+        m_MethodName: QB02Option03
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -40822,7 +40822,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption01
+        m_MethodName: QB04Option01
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -41489,7 +41489,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption02
+        m_MethodName: QB05Option02
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -45086,7 +45086,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption05
+        m_MethodName: QB02Option05
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -45618,7 +45618,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption03
+        m_MethodName: QB04Option03
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -46500,7 +46500,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption02
+        m_MethodName: QB04Option02
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -48773,7 +48773,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption02
+        m_MethodName: QB03Option02
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -51208,7 +51208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 938540248}
         m_TargetAssemblyTypeName: GameControllerScript, Assembly-CSharp
-        m_MethodName: QBOption01
+        m_MethodName: QB05Option01
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -1968,7 +1968,7 @@ public class GameControllerScript : MonoBehaviour
     // Random Bonus Question Configuration
     public void RandomBonusQuestion01()
     {
-        questionNumber = UnityEngine.Random.Range(1, 6);
+        bonusQuestionNumber = UnityEngine.Random.Range(1, 6);
         RandomBonusQuestionChecker();
     }
     public void RandomBonusQuestionChecker()
