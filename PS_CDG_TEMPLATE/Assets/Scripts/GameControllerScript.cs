@@ -174,7 +174,8 @@ public class GameControllerScript : MonoBehaviour
 
     // Buttons
     // Buttons - Questions
-    // Buttons - Questions - Main Questions
+    // Buttons - Questions - Next
+    // Buttons - Questions - Next - Main
     private GameObject q01NextButton;
     private GameObject q02NextButton;
     private GameObject q03NextButton;
@@ -190,12 +191,35 @@ public class GameControllerScript : MonoBehaviour
     private GameObject q13NextButton;
     private GameObject q14NextButton;
     private GameObject q15NextButton;
-    // Buttons - Questions - Bonus Questions
+    // Buttons - Questions - Next - Bonus
     private GameObject qB01NextButton;
     private GameObject qB02NextButton;
     private GameObject qB03NextButton;
     private GameObject qB04NextButton;
     private GameObject qB05NextButton;
+    // Buttons - Questions - Undo
+    // Buttons - Questions - Undo - Main
+    private GameObject q01UndoButton;
+    private GameObject q02UndoButton;
+    private GameObject q03UndoButton;
+    private GameObject q04UndoButton;
+    private GameObject q05UndoButton;
+    private GameObject q06UndoButton;
+    private GameObject q07UndoButton;
+    private GameObject q08UndoButton;
+    private GameObject q09UndoButton;
+    private GameObject q10UndoButton;
+    private GameObject q11UndoButton;
+    private GameObject q12UndoButton;
+    private GameObject q13UndoButton;
+    private GameObject q14UndoButton;
+    private GameObject q15UndoButton;
+    // Buttons - Questions - Undo - Bonus
+    private GameObject qB01UndoButton;
+    private GameObject qB02UndoButton;
+    private GameObject qB03UndoButton;
+    private GameObject qB04UndoButton;
+    private GameObject qB05UndoButton;
 
     // Data
     // Data - Variables
@@ -204,6 +228,29 @@ public class GameControllerScript : MonoBehaviour
     private int questionNumber;
     private int questionsAnswered;
     private int bonusQuestionNumber;
+    // Data - Variables - Questions
+    // Data - Variables - Questions - Main
+    private int q01Option;
+    private int q02Option;
+    private int q03Option;
+    private int q04Option;
+    private int q05Option;
+    private int q06Option;
+    private int q07Option;
+    private int q08Option;
+    private int q09Option;
+    private int q10Option;
+    private int q11Option;
+    private int q12Option;
+    private int q13Option;
+    private int q14Option;
+    private int q15Option;
+    // Data - Variables - Questions - Bonus
+    private int qB01Option;
+    private int qB02Option;
+    private int qB03Option;
+    private int qB04Option;
+    private int qB05Option;
     // Data - Bools
     // Data - Bools - Main Questions
     private bool question01Answered = false;
@@ -390,7 +437,9 @@ public class GameControllerScript : MonoBehaviour
         careerOption05Screen = GameObject.Find("CareerOption05Screen");
 
         // Buttons
-        // Buttons - Main Questions
+        // Buttons - Questions
+        // Buttons - Questions - Next
+        // Buttons - Questions - Next - Main
         q01NextButton = GameObject.Find("q01NextButton");
         q02NextButton = GameObject.Find("q02NextButton");
         q03NextButton = GameObject.Find("q03NextButton");
@@ -406,12 +455,35 @@ public class GameControllerScript : MonoBehaviour
         q13NextButton = GameObject.Find("q13NextButton");
         q14NextButton = GameObject.Find("q14NextButton");
         q15NextButton = GameObject.Find("q15NextButton");
-        // Buttons - Bonus Questions
+        // Buttons - Questions - Next - Bonus
         qB01NextButton = GameObject.Find("qB01NextButton");
         qB02NextButton = GameObject.Find("qB02NextButton");
         qB03NextButton = GameObject.Find("qB03NextButton");
         qB04NextButton = GameObject.Find("qB04NextButton");
         qB05NextButton = GameObject.Find("qB05NextButton");
+        // Buttons - Questions - Undo
+        // Buttons - Questions - Undo - Main
+        q01NextButton = GameObject.Find("q01NextButton");
+        q02NextButton = GameObject.Find("q02NextButton");
+        q03NextButton = GameObject.Find("q03NextButton");
+        q04NextButton = GameObject.Find("q04NextButton");
+        q05NextButton = GameObject.Find("q05NextButton");
+        q06NextButton = GameObject.Find("q06NextButton");
+        q07NextButton = GameObject.Find("q07NextButton");
+        q08NextButton = GameObject.Find("q08NextButton");
+        q09NextButton = GameObject.Find("q09NextButton");
+        q10NextButton = GameObject.Find("q10NextButton");
+        q11NextButton = GameObject.Find("q11NextButton");
+        q12NextButton = GameObject.Find("q12NextButton");
+        q13NextButton = GameObject.Find("q13NextButton");
+        q14NextButton = GameObject.Find("q14NextButton");
+        q15NextButton = GameObject.Find("q15NextButton");
+        // Buttons - Questions - Undo - Bonus
+        qB01UndoButton = GameObject.Find("qB01UndoButton");
+        qB02UndoButton = GameObject.Find("qB02UndoButton");
+        qB03UndoButton = GameObject.Find("qB03UndoButton");
+        qB04UndoButton = GameObject.Find("qB04UndoButton");
+        qB05UndoButton = GameObject.Find("qB05UndoButton");
     }
 
     void Start()
@@ -544,6 +616,18 @@ public class GameControllerScript : MonoBehaviour
         careerOption05 += 1;
         q01NextButton.SetActive(true);
     }
+    public void Q01Undo()
+    {
+        q01Option01.SetActive(true);
+        q01Option02.SetActive(true);
+        q01Option03.SetActive(true);
+        q01Option04.SetActive(true);
+        q01Option05.SetActive(true);
+
+        q01Option = 0;
+        q01NextButton.SetActive(false);
+        q01UndoButton.SetActive(false);
+    }
     public void Q01Completed()
     {
         question01Screen.SetActive(false);
@@ -608,6 +692,18 @@ public class GameControllerScript : MonoBehaviour
 
         careerOption05 += 1;
         q02NextButton.SetActive(true);
+    }
+    public void Q02Undo()
+    {
+        q02Option01.SetActive(true);
+        q02Option02.SetActive(true);
+        q02Option03.SetActive(true);
+        q02Option04.SetActive(true);
+        q02Option05.SetActive(true);
+
+        q02Option = 0;
+        q02NextButton.SetActive(false);
+        q02UndoButton.SetActive(false);
     }
     public void Q02Completed()
     {
@@ -674,6 +770,18 @@ public class GameControllerScript : MonoBehaviour
         careerOption05 += 1;
         q03NextButton.SetActive(true);
     }
+    public void Q03Undo()
+    {
+        q03Option01.SetActive(true);
+        q03Option02.SetActive(true);
+        q03Option03.SetActive(true);
+        q03Option04.SetActive(true);
+        q03Option05.SetActive(true);
+
+        q03Option = 0;
+        q03NextButton.SetActive(false);
+        q03UndoButton.SetActive(false);
+    }
     public void Q03Completed()
     {
         question03Screen.SetActive(false);
@@ -738,6 +846,18 @@ public class GameControllerScript : MonoBehaviour
 
         careerOption05 += 1;
         q04NextButton.SetActive(true);
+    }
+    public void Q04Undo()
+    {
+        q04Option01.SetActive(true);
+        q04Option02.SetActive(true);
+        q04Option03.SetActive(true);
+        q04Option04.SetActive(true);
+        q04Option05.SetActive(true);
+
+        q04Option = 0;
+        q04NextButton.SetActive(false);
+        q01UndoButton.SetActive(false);
     }
     public void Q04Completed()
     {
@@ -804,6 +924,18 @@ public class GameControllerScript : MonoBehaviour
         careerOption05 += 1;
         q05NextButton.SetActive(true);
     }
+    public void Q05Undo()
+    {
+        q05Option01.SetActive(true);
+        q05Option02.SetActive(true);
+        q05Option03.SetActive(true);
+        q05Option04.SetActive(true);
+        q05Option05.SetActive(true);
+
+        q05Option = 0;
+        q05NextButton.SetActive(false);
+        q06UndoButton.SetActive(false);
+    }
     public void Q05Completed()
     {
         question05Screen.SetActive(false);
@@ -868,6 +1000,18 @@ public class GameControllerScript : MonoBehaviour
 
         careerOption05 += 1;
         q06NextButton.SetActive(true);
+    }
+    public void Q06Undo()
+    {
+        q06Option01.SetActive(true);
+        q06Option02.SetActive(true);
+        q06Option03.SetActive(true);
+        q06Option04.SetActive(true);
+        q06Option05.SetActive(true);
+
+        q06Option = 0;
+        q06NextButton.SetActive(false);
+        q06UndoButton.SetActive(false);
     }
     public void Q06Completed()
     {
@@ -934,6 +1078,18 @@ public class GameControllerScript : MonoBehaviour
         careerOption05 += 1;
         q07NextButton.SetActive(true);
     }
+    public void Q07Undo()
+    {
+        q07Option01.SetActive(true);
+        q07Option02.SetActive(true);
+        q07Option03.SetActive(true);
+        q07Option04.SetActive(true);
+        q07Option05.SetActive(true);
+
+        q07Option = 0;
+        q07NextButton.SetActive(false);
+        q07UndoButton.SetActive(false);
+    }
     public void Q07Completed()
     {
         question07Screen.SetActive(false);
@@ -998,6 +1154,18 @@ public class GameControllerScript : MonoBehaviour
 
         careerOption05 += 1;
         q08NextButton.SetActive(true);
+    }
+    public void Q08Undo()
+    {
+        q08Option01.SetActive(true);
+        q08Option02.SetActive(true);
+        q08Option03.SetActive(true);
+        q08Option04.SetActive(true);
+        q08Option05.SetActive(true);
+
+        q08Option = 0;
+        q08NextButton.SetActive(false);
+        q08UndoButton.SetActive(false);
     }
     public void Q08Completed()
     {
@@ -1064,6 +1232,18 @@ public class GameControllerScript : MonoBehaviour
         careerOption05 += 1;
         q09NextButton.SetActive(true);
     }
+    public void Q09Undo()
+    {
+        q09Option01.SetActive(true);
+        q09Option02.SetActive(true);
+        q09Option03.SetActive(true);
+        q09Option04.SetActive(true);
+        q09Option05.SetActive(true);
+
+        q09Option = 0;
+        q09NextButton.SetActive(false);
+        q09UndoButton.SetActive(false);
+    }
     public void Q09Completed()
     {
         question09Screen.SetActive(false);
@@ -1128,6 +1308,18 @@ public class GameControllerScript : MonoBehaviour
 
         careerOption05 += 1;
         q10NextButton.SetActive(true);
+    }
+    public void Q10Undo()
+    {
+        q10Option01.SetActive(true);
+        q10Option02.SetActive(true);
+        q10Option03.SetActive(true);
+        q10Option04.SetActive(true);
+        q10Option05.SetActive(true);
+
+        q10Option = 0;
+        q10NextButton.SetActive(false);
+        q10UndoButton.SetActive(false);
     }
     public void Q10Completed()
     {
@@ -1194,6 +1386,18 @@ public class GameControllerScript : MonoBehaviour
         careerOption05 += 1;
         q11NextButton.SetActive(true);
     }
+    public void Q11Undo()
+    {
+        q11Option01.SetActive(true);
+        q11Option02.SetActive(true);
+        q11Option03.SetActive(true);
+        q11Option04.SetActive(true);
+        q11Option05.SetActive(true);
+
+        q11Option = 0;
+        q11NextButton.SetActive(false);
+        q11UndoButton.SetActive(false);
+    }
     public void Q11Completed()
     {
         question11Screen.SetActive(false);
@@ -1258,6 +1462,18 @@ public class GameControllerScript : MonoBehaviour
 
         careerOption05 += 1;
         q12NextButton.SetActive(true);
+    }
+    public void Q12Undo()
+    {
+        q12Option01.SetActive(true);
+        q12Option02.SetActive(true);
+        q12Option03.SetActive(true);
+        q12Option04.SetActive(true);
+        q12Option05.SetActive(true);
+
+        q12Option = 0;
+        q12NextButton.SetActive(false);
+        q12UndoButton.SetActive(false);
     }
     public void Q12Completed()
     {
@@ -1324,6 +1540,18 @@ public class GameControllerScript : MonoBehaviour
         careerOption05 += 1;
         q13NextButton.SetActive(true);
     }
+    public void Q13Undo()
+    {
+        q13Option01.SetActive(true);
+        q13Option02.SetActive(true);
+        q13Option03.SetActive(true);
+        q13Option04.SetActive(true);
+        q13Option05.SetActive(true);
+
+        q13Option = 0;
+        q13NextButton.SetActive(false);
+        q13UndoButton.SetActive(false);
+    }
     public void Q13Completed()
     {
         question13Screen.SetActive(false);
@@ -1388,6 +1616,18 @@ public class GameControllerScript : MonoBehaviour
 
         careerOption05 += 1;
         q14NextButton.SetActive(true);
+    }
+    public void Q14Undo()
+    {
+        q14Option01.SetActive(true);
+        q14Option02.SetActive(true);
+        q14Option03.SetActive(true);
+        q14Option04.SetActive(true);
+        q14Option05.SetActive(true);
+
+        q14Option = 0;
+        q14NextButton.SetActive(false);
+        q14UndoButton.SetActive(false);
     }
     public void Q14Completed()
     {
